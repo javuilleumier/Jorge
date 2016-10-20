@@ -1,0 +1,82 @@
+<div data-role="view" data-title="Add" data-model="app.realizarpedido.addItemViewModel" data-bind="events: { show: onShow }" id="realizarpedidoModelAddScreen" class="screen screen--add add-item-view">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span>Agregar Producto</span>
+            <a data-role="backbutton" data-align="left" data-bind="events: { click: onCancel }">Cancel</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: onSaveClick }">Save</a>
+        </div>
+    </header>
+    <!-- START_CUSTOM_CODE_realizarpedidoModel -->
+    <!-- END_CUSTOM_CODE_realizarpedidoModel -->
+    <div id="editableListForm42" class="form-view screen__content screen__content--form">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+
+                    <label id="productoField" class="field field--text">
+                        <span class="field__label">Producto</span>
+
+
+                        <input id="producto" data-bind="value: addFormData.producto" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="cantidadField" class="field field--number">
+                        <span class="field__label">Cantidad</span>
+
+
+                        <input id="cantidad" data-bind="value: addFormData.cantidad" type="number">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="dropdownlist2Field" class="field field--drop-down km-label-above">
+
+                        <span class="field__label">Medida</span>
+
+                        <select data-bind="value: addFormData.dropdownlist2" data-role="dropdownlist">
+                            <option value="Paquete">Paquete</option>
+                            <option value="Unidad">Unidad</option>
+                            <option value="Botella">Botella</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="dropdownlist1Field" class="field field--drop-down">
+
+                        <span class="field__label">Tiendas 1A</span>
+
+                        <select data-bind="value: addFormData.dropdownlist1" data-role="dropdownlist">
+                            <option value="Tienda 1">Tienda 1</option>
+                            <option value="Tienda 2">Tienda 2</option>
+                            <option value="Tienda 3">Tienda 3</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <div id="imageField" class="field field--image imageListItem km-label-above">
+
+                        <div class="field__label">Ubique Su Tienda</div>
+
+                        <div class="align-center field__content">
+
+
+                            <img src="resources/173_Mapa_cultura_Medellin.png">
+
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <!-- START_CUSTOM_CODE_editableListForm42 -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <!-- END_CUSTOM_CODE_editableListForm42 -->
+    </div>
+</div>
